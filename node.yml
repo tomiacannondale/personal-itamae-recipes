@@ -1,0 +1,18 @@
+current_user: vagrant
+emacsd:
+  repository: https://github.com/tomiacannondale/dot.emacs.d
+  ruby_mode_snippets_repository: https://github.com/tomiacannondale/ruby-mode-yasnippets.git
+  rspec_mode_snippets_repository: https://github.com/tomiacannondale/rspec-yasnippets.git
+zshd:
+  repository: https://github.com/tomiacannondale/dot.zsh.d
+anyenv:
+  schema: https
+  users:
+    vagrant:
+      install_versions:
+      - rbenv:
+        - 2.7.1
+        pyenv:
+        - 3.8.2
+        nodenv:
+        - 12.16.2
