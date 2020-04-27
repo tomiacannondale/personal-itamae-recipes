@@ -1,3 +1,5 @@
+require 'itamae/plugin/resource/cask'
+
 include_recipe './dropbox.rb'
 include_recipe './firefox.rb'
 include_recipe './google_chrome.rb'
@@ -27,5 +29,6 @@ when "osx", "darwin"
 
   package 'heroku'
   package 'youtube-dl'
+  cask 'android-file-transfer'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
