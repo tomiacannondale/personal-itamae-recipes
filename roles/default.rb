@@ -6,6 +6,7 @@ when 'osx', 'darwin'
 else
   node[:user_dir] = "/home/#{node[:current_user]}"
 end
+ENV['ANYENV_ROOT'] = "#{node[:user_dir]}/.anyenv"
 
 case node[:platform]
 when 'debian', 'ubuntu', 'mint'

@@ -11,9 +11,9 @@ Target is desktop os(MacOS or ubuntu not server)
 5. run itamae
 
 ```
-ANYENV_ROOT=<user home directory>/.anyenv bundle exec itamae local roles/default.rb -y node.yml
+> bundle exec itamae local roles/default.rb -y node.yml
 ```
 
 ```
-> ANYENV_ROOT=/home/vagrant/.anyenv be itamae ssh --vagrant --host default --port 2222 roles/anyenv.rb -y node.yml --ssh-config=sshconfig
+> bundle exec itamae ssh --vagrant --host default --port 2222 roles/default.rb -y node.yml --ssh-config=sshconfig
 ```
