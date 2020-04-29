@@ -22,7 +22,7 @@ package 'autojump'
 case node[:platform]
 when 'debian', 'ubuntu', 'mint'
 when "osx", "darwin"
-  package 'ack'
+  package 'awk'
   package 'gnu-tar'
   package 'pinentry-mac'
   package 'nkf'
