@@ -13,5 +13,7 @@ when 'debian', 'ubuntu', 'mint'
 when "osx", "darwin"
   package "texinfo"
   package "gnutls"
+
+  package "gnupg"
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
