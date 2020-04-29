@@ -6,6 +6,8 @@ include_recipe './google_chrome.rb'
 include_recipe './tex.rb'
 include_recipe './pt.rb'
 include_recipe './heroku.rb'
+include_recipe './vagrant.rb'
+include_recipe './vlc.rb'
 
 package 'git'
 package 'cmigemo'
@@ -31,3 +33,5 @@ when "osx", "darwin"
   cask 'android-file-transfer'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
+
+include_recipe './virtualbox.rb'

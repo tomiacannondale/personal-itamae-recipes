@@ -39,3 +39,23 @@ rails project > bundle binstubs --all --path=.bundle/bin
 any directory > rbenv rehash
 any directory > nodenev rehash
 ```
+
+### virutalbox installation is fail ###
+
+During installing virtualbox, fail with blow message.
+
+```
+virtualbox requires a kernel extension to work.
+ERROR :         stdout | If the installation fails, retry after you enable it in:
+ERROR :         stdout |   System Preferences -> Security & Privacy -> General
+ERROR :         stdout |
+ERROR :         stdout | For more information, refer to vendor documentation or this Apple Technical Note:
+ERROR :         stdout |   https://developer.apple.com/library/content/technotes/tn2459/_index.html
+...
+```
+
+after fail
+
+     システム環境設定 -> セキュリティとプライバシー -> 一般
+
+and Permmit virtualbox
