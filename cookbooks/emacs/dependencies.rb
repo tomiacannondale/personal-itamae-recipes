@@ -1,3 +1,6 @@
+package 'autoconf'
+package 'automake'
+
 case node[:platform]
 when 'debian', 'ubuntu', 'mint'
   package "texinfo"
