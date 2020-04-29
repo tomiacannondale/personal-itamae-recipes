@@ -5,6 +5,7 @@ include_recipe './firefox.rb'
 include_recipe './google_chrome.rb'
 include_recipe './tex.rb'
 include_recipe './pt.rb'
+include_recipe './heroku.rb'
 
 package 'git'
 package 'cmigemo'
@@ -27,7 +28,6 @@ when "osx", "darwin"
   package 'pinentry-mac'
   package 'nkf'
 
-  package 'heroku'
   package 'youtube-dl'
   cask 'android-file-transfer'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
