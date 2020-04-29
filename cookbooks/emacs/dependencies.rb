@@ -14,6 +14,6 @@ when "osx", "darwin"
   package "texinfo"
   package "gnutls"
 
-  package "gnupg"
+  include_recipe '../gpg/default.rb'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end

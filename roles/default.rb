@@ -3,6 +3,7 @@ require 'pry'
 case node[:platform]
 when 'osx', 'darwin'
   node[:user_dir] = "/Users/#{node[:current_user]}"
+  node[:user_group] = 'staff'
 else
   node[:user_dir] = "/home/#{node[:current_user]}"
 end

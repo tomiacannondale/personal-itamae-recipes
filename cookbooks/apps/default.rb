@@ -25,7 +25,6 @@ when 'debian', 'ubuntu', 'mint'
 when "osx", "darwin"
   package 'awk'
   package 'gnu-tar'
-  package 'pinentry-mac'
   package 'nkf'
 
   package 'youtube-dl'
