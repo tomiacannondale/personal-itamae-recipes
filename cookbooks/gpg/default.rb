@@ -7,6 +7,12 @@ when 'osx', 'darwin'
   package 'gpg2'
   package 'pinentry-mac'
 
+  directory "#{node[:user_dir]}/.gnupg" do
+    owner node[:current_user]
+    group node[:user_group]
+    mode '700'
+  end
+
   remote_file "#{node[:user_dir]}/.gnupg/gpg-agent.conf" do
     source 'files/gpg-agent.conf'
     owner node[:current_user]
