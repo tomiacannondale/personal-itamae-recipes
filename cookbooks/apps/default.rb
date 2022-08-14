@@ -9,7 +9,6 @@ include_recipe './heroku.rb'
 include_recipe './vagrant.rb'
 include_recipe './vlc.rb'
 
-package 'git'
 package 'cmigemo'
 package 'graphviz'
 package 'zsh'
