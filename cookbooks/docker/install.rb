@@ -27,4 +27,18 @@ when 'debian', 'ubuntu', 'mint'
 when "osx", "darwin"
   cask 'docker'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
+  package "yum-utils"
+
+  execute "Add Docker official repository" do
+    user "root"
+    command <<-COMMAND
+      yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    COMMAND
+    not_if "test -f /etc/yum.repos.d/docker-ce.repo"
+  end
+
+  package "docker-ce"
+  package "docker-ce-cli"
+  package "containerd.io"
+  package "docker-compose-plugin"
 end
