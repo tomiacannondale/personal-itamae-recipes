@@ -6,7 +6,7 @@ emacsd:
 zshd:
   repository: https://github.com/tomiacannondale/dot.zsh.d
 anyenv:
-  schema: https
+  scheme: https
   users:
     vagrant:
       install_versions:
