@@ -3,6 +3,7 @@ when 'debian', 'ubuntu', 'mint'
   remote_file "/tmp/mysql_pubkey.asc"
 
   execute 'Add gpg key' do
+    not_if "apt-key list | grep mysql"
     command <<-SHELL
       apt-key add /tmp/mysql_pubkey.asc
     SHELL
