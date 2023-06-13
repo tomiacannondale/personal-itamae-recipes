@@ -11,8 +11,8 @@ anyenv:
     vagrant:
       install_versions:
       - rbenv:
-        - 2.7.1
+        - 3.2.2
         pyenv:
-        - 3.8.2
+        - 3.11.4
         nodenv:
-        - 12.16.2
+        - 18.16.0
