@@ -1,5 +1,5 @@
 require 'itamae/plugin/resource/cask'
 
-install 'aws'
-install 'session-manager-plugin'
+package 'awscli'
+package 'session-manager-plugin'
 cask 'aws-vault'
