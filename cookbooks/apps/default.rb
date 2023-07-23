@@ -12,8 +12,6 @@ include_recipe './cmigemo.rb'
 include_recipe './graphviz.rb'
 include_recipe './zsh.rb'
 include_recipe './tree.rb'
-include_recipe './zsh.rb'
-include_recipe './tree.rb'
 
 include_recipe './peco.rb'
 include_recipe './source-highlight.rb'
