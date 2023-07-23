@@ -10,6 +10,7 @@ when "osx", "darwin"
   user_aquaskk_dir = "\"#{node[:user_dir]}/Library/Application Support/AquaSKK/\""
   user_keymap_path = "#{user_aquaskk_dir}keymap.conf"
 
+  # ?
   execute 'keymap' do
     not_if "ls #{user_keymap_path}"
     command <<-COMMAND
