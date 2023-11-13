@@ -17,6 +17,7 @@ include_recipe './peco.rb'
 include_recipe './source-highlight.rb'
 include_recipe './jq.rb'
 include_recipe './autojump.rb'
+include_recipe './gnu-sed.rb'
 
 # package 'chromedriver'
 
