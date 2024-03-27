@@ -29,4 +29,3 @@ when "osx", "darwin"
   package 'nkf'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
-
