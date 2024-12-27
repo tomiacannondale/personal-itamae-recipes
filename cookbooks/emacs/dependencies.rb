@@ -17,6 +17,14 @@ when "osx", "darwin"
   package "texinfo"
   package "gnutls"
 
+  # for build
+  package "libgccjit"
+  package "pkg-config"
+  package "jansson"
+  package "libxml2"
+  package "libpng"
+  package "gcc"
+
   include_recipe '../gpg/default.rb'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
