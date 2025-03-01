@@ -26,5 +26,11 @@ when "osx", "darwin"
   package "gcc"
 
   include_recipe '../gpg/default.rb'
+
+  execute "link brew sqlite" do
+    command <<-"SHELL"
+    brew link --force sqlite
+    SHELL
+  end
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
