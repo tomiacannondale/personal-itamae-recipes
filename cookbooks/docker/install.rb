@@ -25,7 +25,7 @@ when 'debian', 'ubuntu', 'mint'
   package 'docker-ce-cli'
   package 'containerd.io'
 when "osx", "darwin"
-  cask 'docker'
+  cask 'docker-desktop'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
   package "yum-utils"
 
