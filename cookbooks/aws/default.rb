@@ -2,7 +2,7 @@ require 'itamae/plugin/resource/cask'
 
 package 'awscli'
 package 'session-manager-plugin'
-cask 'aws-vault'
+cask 'aws-vault-binary'
 
 # aws-vaultとfzfを利用して、awsの Elastic Container Serviceのコンテナを対話的に選択アクセスする
 execute 'ecs-exec' do
