@@ -8,7 +8,7 @@ execute "install emacs" do
   export CPPFLAGS="-I/opt/homebrew/opt/sqlite/include"
   export PKG_CONFIG_PATH="/opt/homebrew/opt/sqlite/lib/pkgconfig"
 
-  ./configure --without-xim --with-json --with-tree-sitter --with-native-compilation
+  ./configure --without-xim --with-json --with-tree-sitter --with-native-compilation --with-dbus
   make
   make install
   SHELL
