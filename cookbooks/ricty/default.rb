@@ -13,5 +13,3 @@ when "osx", "darwin"
   cask 'font-ricty-diminished'
 when 'redhat', 'fedora', 'amazon' # redhad includes CentOS
 end
-
-
